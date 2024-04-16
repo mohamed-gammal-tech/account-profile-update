@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="profile-container">
+    <div class="profile-header">
+        <h1>Profile</h1>
+        <p>I'm a creative designer</p>
+    </div>
+    <div class="profile-picture" onclick="document.getElementById('imageUpload').click()">
+        <img id="profileImage" src="default-profile.png" alt="Profile Image">
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;" onchange="readURL(this);">
+    </div>
+    <div class="profile-content">
+        <div class="about-me">
+            <h2>About me</h2>
+            <p>I am a creative designers and most interested in makeing sadness and bloode designs hope you love my art...</p>
+        </div>
+        <div class="profile-details">
+            <h2>Details</h2>
+            <p><strong>Name:</strong> Mohamed Gamal</p>
+            <p><strong>phone:</strong>0100000000 </p>
+            <p><strong>Location:</strong> 39 ibn oqil streat vectoria alexandreia </p>
+            <p><strong>Follow me:</strong></p>
+            <!-- Social media links -->
+            <div class="social-media">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
